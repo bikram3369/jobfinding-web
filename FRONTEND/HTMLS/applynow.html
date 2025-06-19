@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href=" ../CSS/styles.css">
+</head>
+
+<body>
+
+    <!-- header section start  -->
+    <header class="header">
+
+        <section class="flex">
+
+            <div id="menu-btn" class="fas fa-bars-staggered"> </div>
+
+            <a href="home.html" class="logo"> <i class="fas fa-briefcase"></i>
+                JobHunt </a>
+
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="Jobs.html">Jobs</a>
+                <a href="Contact.html">Contacts</a>
+                <a href="LogIn.html">LogIn</a>
+            </nav>
+
+            <a href="#" class="btn" styles="margin-top: 0">Post Jobs</a>
+
+        </section>
+
+    </header>
+
+    <!-- header section end -->
+
+    <!-- apply now starts here  -->
+
+ <div class="apply-form-container">
+    <section class="apply-form">
+
+        <form action="submit_application.php" method="post" enctype="multipart/form-data">
+            <h3 class="apply-heading">Apply for: <span id="job-title">Senior Web Designer</span></h3>
+
+            <input type="text" name="name" required maxlength="50" placeholder="your full name" class="apply-input">
+
+            <input type="email" name="email" required maxlength="50" placeholder="your email address" class="apply-input">
+
+            <input type="tel" name="phone" required maxlength="15" placeholder="your contact number" class="apply-input">
+
+            <select name="qualification" required class="apply-input">
+                <option value="">Select your qualification</option>
+                <option value="10th Pass">10th Pass</option>
+                <option value="12th Pass">12th Pass</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Post Graduate">Post Graduate</option>
+                <option value="PhD">PhD</option>
+            </select>
+
+            <select name="experience" required class="apply-input">
+                <option value="">Select years of experience</option>
+                <option value="Fresher">Fresher</option>
+                <option value="1 Year">1 Year</option>
+                <option value="2 Years">2 Years</option>
+                <option value="3 Years">3 Years</option>
+                <option value="4+ Years">4+ Years</option>
+            </select>
+
+            <textarea name="cover_letter" rows="6" maxlength="1000" required class="apply-input" placeholder="Write your cover letter or message here..."></textarea>
+
+            <label for="resume-upload" class="apply-label">Upload Resume (PDF/DOC)</label>
+            <input type="file" name="resume" id="resume-upload" accept=".pdf,.doc,.docx" required class="apply-input">
+
+            <p class="apply-text">Already applied? <a href="login.html" class="apply-link">Login to check status</a></p>
+
+            <input type="submit" value="Submit Application" name="submit" class="apply-btn">
+        </form>
+
+    </section>
+</div>
+
+
+
+
+    <!-- apply now part ends here  -->
+
+
+    <!-- footer starts here  -->
+
+    <footer class="footer">
+
+        <section class="grid">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i> About</a>
+                <a href="jobs.html"><i class="fas fa-angle-right"></i> All Jobs</a>
+                <a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a>
+                <a href="filter.html"><i class="fas fa-angle-right"></i> Filter Search</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="account.html"><i class="fas fa-angle-right"></i> Account</a>
+                <a href="login.html"><i class="fas fa-angle-right"></i> Login</a>
+                <a href="register.html"><i class="fas fa-angle-right"></i> Register</a>
+                <a href="post-job.html"><i class="fas fa-angle-right"></i> Post Job</a>
+                <a href="dashboard.html"><i class="fas fa-angle-right"></i> Dashboard</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://houzz.com"><i class="fa fa-house"></i> Houzz</a>
+            </div>
+
+        </section>
+
+        <div class="credit">&copy; copyright @2025 by <span>Visionaries</span> | all rights reserved!</div>
+
+    </footer>
+
+
+    <!-- custom js file link  -->
+    <script src="../JS/script.js"></script>
+
+
+</body>
+
+</html>
